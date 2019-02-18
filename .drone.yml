@@ -15,7 +15,7 @@ name: part2
 
 steps:
 - name: package gradle
-  image: ubuntu
+  image: 8-jdk	
   commands:
   - cd gradle-simplest
   - ./gradlew shadowJar
