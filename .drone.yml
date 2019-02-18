@@ -1,5 +1,5 @@
 kind: pipeline
-name: default
+name: part1
 
 steps:
 - name: package maven
@@ -7,3 +7,15 @@ steps:
   commands:
   - cd maven-simplest
   - mvn package
+
+---
+
+kind: pipeline
+name: part2
+
+steps:
+- name: package gradle
+  image: ubuntu
+  commands:
+  - cd gradle-simplest
+  - ./gradlew shadowJar
