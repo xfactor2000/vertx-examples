@@ -15,7 +15,7 @@ name: part2
 
 steps:
 - name: package gradle
-  image: 8-jdk	
+  image: 8u181-jdk-stretch
   commands:
   - cd gradle-simplest
   - ./gradlew shadowJar
