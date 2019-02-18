@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+
+steps:
+- name: package maven
+  image: maven
+  commands:
+  - cd maven-simplest
+  - mvn package
